@@ -18,4 +18,7 @@ headers = {
     "Content-Type": "application/json"
 }
 
-print(token)
+device_endpoint = "intent/api/v1/network-device"
+
+dev_response = requests.get(url=f"{base_url}{device_endpoint}", headers=headers).json()['response']
+print(json.dumps(dev_response, indent=2))

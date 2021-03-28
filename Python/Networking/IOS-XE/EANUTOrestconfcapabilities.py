@@ -4,8 +4,8 @@ import json
 router = {
     "host": "ios-xe-mgmt.cisco.com",
     "port": "9443",
-    "user": "root",
-    "password": "D_Vay!_10&"
+    "user": "developer",
+    "password": "C1sco12345"
 }
 
 url = f"https://{router['host']}:{router['port']}/restconf/data/netconf-state/capabilities"

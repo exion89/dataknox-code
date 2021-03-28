@@ -6,10 +6,10 @@ from lxml.etree import fromstring
 # logging.basicConfig(level=logging.DEBUG)
 
 router = {
-    "host": "ios-xe-mgmt-latest.cisco.com",
+    "host": "ios-xe-mgmt.cisco.com",
     "port": "10000",
-    "username": "root",
-    "password": "D_Vay!_10&",
+    "username": "developer",
+    "password": "C1sco12345",
     "hostkey_verify": False,
     "device_params": {"name": "csr"}
 }
@@ -22,7 +22,7 @@ with manager.connect(**router) as m:
             <establish-subscription xmlns='urn:ietf:params:xml:ns:yang:ietf-event-notifications' xmlns:yp='urn:ietf:params:xml:ns:yang:ietf-yang-push'>
                 <stream>yp:yang-push</stream>
                 <yp:xpath-filter>{sub}</yp:xpath-filter>
-                <yp:period>500</yp:period>
+                <yp:period>3000</yp:period>
             </establish-subscription>
         """
         response = m.dispatch(fromstring(rpc))

@@ -1,4 +1,4 @@
-router = {"host": "sandbox-iosxe-latest-1.cisco.com",
-          "port":830,
+router = {"host": "ios-xe-mgmt.cisco.com",
+          "port": "10000",
           "username": "developer",
           "password": "C1sco12345"}

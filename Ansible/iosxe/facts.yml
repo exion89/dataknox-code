@@ -6,10 +6,10 @@
     - name: Gather IOS Facts
       ios_facts:
         provider:
-          host: ios-xe-mgmt-latest.cisco.com
+          host: ios-xe-mgmt.cisco.com
           port: 8181
-          username: root
-          password: D_Vay!_10&
+          username: developer
+          password: C1sco12345
 
     - name: What is the IOS OS ver?
       debug:
@@ -18,6 +18,11 @@
     - name: What is the hostname?
       debug:
         var: ansible_net_hostname
+
+    - name: Display interfaces available
+      debug:
+        var: ansible_net_interfaces
+        
 #### OTHER USEFUL VARS
 # ansible_net_config  - this gets the running config
 # ansible_net_model

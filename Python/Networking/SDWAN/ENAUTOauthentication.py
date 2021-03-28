@@ -1,12 +1,12 @@
 import requests
 import json
 
-base_url = "https://sandboxsdwan.cisco.com:8443/"
+base_url = "https://sandbox-sdwan-1.cisco.com/"
 auth_endpoint = "j_security_check"
 
 login_body = {
     "j_username": "devnetuser",
-    "j_password": "Cisco123!"
+    "j_password": "RG!_Yw919_83"
 }
 
 sesh = requests.session()
